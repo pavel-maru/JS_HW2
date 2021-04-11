@@ -6,23 +6,19 @@
 // (использовать функции из пункта 5) и вернуть полученное значение (применить switch).
 
 function mathOperation(arg1, arg2, operation) {
-    let res;
     switch (operation) {
         case '+':
-            res = plus(arg1, arg2);
-            break;
+            return plus(arg1, arg2);
         case '-':
-            res = minus(arg1, arg2);
-            break;
+            return minus(arg1, arg2);
         case '*':
-            res = mult(arg1, arg2);
-            break;
+            return mult(arg1, arg2);
         case '/':
-            res = div(arg1, arg2);
-            break;
+            return div(arg1, arg2);
     }
-    return res;
 }
+
+// src = task_2_5
 
 function plus(a, b) {
     return a + b;
@@ -40,4 +36,5 @@ function div(a, b) {
     return a / b;
 }
 
-alert(mathOperation(10, 20, '/'));
+alert(mathOperation(10, 20, '+'));
+
