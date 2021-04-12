@@ -4,14 +4,10 @@
 // power(val, pow), где val — заданное число, pow – степень.
 
 function power(val, pow) {
-    let res = val;
     if (pow == 0) {
-        res = 1;
+        return 1;
     }
-    else {
-        res = val * power(res, pow - 1);
-    }
-    return res;
+    return val * power(val, pow - 1);
 }
 
-alert(power(2, 10));
+alert(power(3, 3));
